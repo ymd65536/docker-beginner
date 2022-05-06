@@ -1,0 +1,6 @@
+FROM mysql
+# docker build -t mysql .
+# docker run -dit --name mysql_db -p 8080:80 mysql
+# docker stop mysql_db
+# docker rm $(docker ps --all -q)
+# docker rmi $(docker images -q)

@@ -1,0 +1,6 @@
+FROM ubuntu:22.04
+# docker build -t ubuntu .
+# docker run -dit --name web_linux_ubuntu -p 8080:80 ubuntu
+# docker stop web_linux_ubuntu
+# docker rm $(docker ps --all -q)
+# docker rmi $(docker images -q)

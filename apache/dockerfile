@@ -1,0 +1,4 @@
+FROM httpd
+# docker build -t apache .
+# docker run -dit --name web_content -p 8080:80 apache
+# docker stop web_content

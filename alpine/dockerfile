@@ -1,0 +1,6 @@
+FROM alpine
+# docker build -t alpine .
+# docker run -dit --name web_linux -p 8080:80 alpine
+# docker stop web_linux
+# docker rm $(docker ps --all -q)
+# docker rmi $(docker images -q)

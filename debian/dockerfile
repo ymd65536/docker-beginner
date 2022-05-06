@@ -1,0 +1,15 @@
+FROM debian
+EXPOSE 80
+RUN apt update \ 
+ && apt install -y apache2 php libapache2-mod-php \
+ && apt clean && rm -rf /var/lib/apt/lists/* \
+ && rm -rf /var/www/html/index.html
+
+COPY index.php /var/www/html
+CMD /usr/sbin/apachectl -DFOREGROUND
+
+# docker build -t debian_php .
+# docker run -dit --name myphp -p 8080:80 debian_php
+# docker stop myphp
+# docker rm $(docker ps --all -q)
+# docker rmi $(docker images -q)
