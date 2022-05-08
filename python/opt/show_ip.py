@@ -1,6 +1,4 @@
 # コンテナのIPを調べる
-
-from ipaddress import ip_address
 import socket
 
 if __name__ == "__main__":
